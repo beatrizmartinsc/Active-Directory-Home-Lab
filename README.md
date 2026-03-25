@@ -92,7 +92,7 @@ Documenting problems solved during the build, these reflect real issues encounte
 
 **Resolution:** Aligned timezones on both VMs, manually corrected the server clock, restarted the Windows Time service, and forced resync. Confirmed resolution with successful `gpupdate /force`.
 
-**Takeaway:** Always verify timezone (`tzutil /g`), not just displayed time. The DC is the authoritative time source for the domain — all clients sync from it.
+**Takeaway:** Always verify timezone (`tzutil /g`), not just displayed time. The DC is the authoritative time source for the domain, all clients sync from it.
 
 ![Timezone mismatch between VMs — AUS Eastern vs Pacific](screenshots/timezone-mismatch-1.png)
 
