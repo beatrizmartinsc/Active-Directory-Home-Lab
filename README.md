@@ -53,7 +53,7 @@ Verified policy application on the client workstation using `gpresult /r`, confi
 
 ![gpresult showing applied policies on WS01](screenshots/gpresult-ws01.png)
 
-Tested account lockout by simulating failed login attempts, confirmed the account was locked after 5 attempts and successfully unlocked it via AD Users and Computers (a common Service Desk workflow).
+Tested account lockout by simulating failed login attempts, confirmed the account was locked after 5 attempts and successfully unlocked it via AD Users and Computers.
 
 ![Account locked out after 5 failed attempts](screenshots/account-locked-1.png)
 
