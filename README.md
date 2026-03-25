@@ -94,9 +94,7 @@ Documenting problems solved during the build, these reflect real issues encounte
 
 **Takeaway:** Always verify timezone (`tzutil /g`), not just displayed time. The DC is the authoritative time source for the domain — all clients sync from it.
 
-![Timezone mismatch between VMs — AUS Eastern vs Pacific](screenshots/timezone-mismatch.png)
-
-![Time sync error and resolution](screenshots/time-sync-error.png)
+![Timezone mismatch between VMs — AUS Eastern vs Pacific](screenshots/timezone-mismatch-1.png)
 
 ![w32tm /resync failing then succeeding after fix](screenshots/time-sync-fix.png)
 
