@@ -4,7 +4,7 @@ A fully functional corporate Active Directory environment built from scratch usi
 
 ## Lab architecture
 
-![Lab Architecture](screenshots/architecture-diagram.svg)
+![Lab Architecture](screenshots/architecture-diagram.png)
 
 | | DC01 (Domain Controller) | WS01 (Client Workstation) |
 |---|---|---|
