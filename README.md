@@ -98,13 +98,6 @@ Documenting problems solved during the build, these reflect real issues encounte
 
 ![w32tm /resync failing then succeeding after fix](screenshots/time-sync-fix.png)
 
-### AD rejecting user password during creation
-**Symptom:** Password "John4321@" was rejected for user John Logan.
-
-**Root cause:** Default AD password policy prohibits passwords containing the user's account name or display name.
-
-**Takeaway:** AD enforces complexity rules automatically, useful for security, important to know for Service Desk (explaining to users why their password was rejected).
-
 ---
 
 ## Networking concepts applied
