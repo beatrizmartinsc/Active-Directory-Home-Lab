@@ -55,7 +55,7 @@ Verified policy application on the client workstation using `gpresult /r`, confi
 
 Tested account lockout by simulating failed login attempts, confirmed the account was locked after 5 attempts and successfully unlocked it via AD Users and Computers (a common Service Desk workflow).
 
-![Account locked out after 5 failed attempts](screenshots/account-locked.png)
+![Account locked out after 5 failed attempts](screenshots/account-locked-1.png)
 
 ![Unlocking account in AD Users and Computers](screenshots/unlock-account.png)
 
