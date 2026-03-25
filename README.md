@@ -31,7 +31,7 @@ Built a new AD forest (soclab.local) from scratch, including AD DS role installa
 ![Organisational Units and users in AD](screenshots/ous-and-users.png)
 
 ### Network design and dual-adapter architecture
-Designed a network topology using two adapters per VM: NAT for internet access and Internal Network for isolated domain traffic. This mirrors enterprise environments where management and production traffic are segmented. Configured static IPs with appropriate DNS settings — the DC points DNS to loopback (127.0.0.1) because it hosts the DNS role, while clients point to the DC's IP.
+Designed a network topology using two adapters per VM: NAT for internet access and Internal Network for isolated domain traffic. This mirrors enterprise environments where management and production traffic are segmented. Configured static IPs with appropriate DNS settings, the DC points DNS to loopback (127.0.0.1) because it hosts the DNS role, while clients point to the DC's IP.
 
 ### Group Policy enforcement
 Configured domain-wide security policies through the Default Domain Policy GPO:
@@ -105,7 +105,7 @@ Documenting problems solved during the build, these reflect real issues encounte
 
 **Root cause:** Default AD password policy prohibits passwords containing the user's account name or display name.
 
-**Takeaway:** AD enforces complexity rules automatically — useful for security, important to know for Service Desk (explaining to users why their password was rejected).
+**Takeaway:** AD enforces complexity rules automatically, useful for security, important to know for Service Desk (explaining to users why their password was rejected).
 
 ---
 
@@ -135,15 +135,6 @@ This lab applied networking fundamentals across multiple OSI layers:
 - **Active Directory Users and Computers:** OU/user management
 - **Group Policy Management Console:** GPO creation and enforcement
 - **Command line tools:** ipconfig, ping, netsh, gpupdate, gpresult, w32tm, tzutil
-
----
-
-## References
-
-- [NIST SP 800-63B: Digital Identity Guidelines](https://pages.nist.gov/800-63-FAQ/#q-b05) - Modern password policy recommendations
-- [Microsoft Learn: AD DS Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
-- [Microsoft Learn: Kerberos Authentication](https://learn.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview)
-- [Microsoft Learn: Group Policy Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview)
 
 ---
 
