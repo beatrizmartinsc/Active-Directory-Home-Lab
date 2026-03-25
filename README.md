@@ -43,7 +43,7 @@ Configured domain-wide security policies through the Default Domain Policy GPO:
 | Account lockout threshold | Disabled | 5 attempts | Prevents brute-force attacks while tolerating occasional typos |
 | Lockout duration | N/A | 30 minutes | Auto-unlock after cooling period avoids permanent lockouts |
 
-![Password Policy configuration](screenshots/password-policy.png)
+![Password Policy configuration](screenshots/password-policy-1.png)
 
 ![Account Lockout Policy configuration](screenshots/lockout-policy.png)
 
