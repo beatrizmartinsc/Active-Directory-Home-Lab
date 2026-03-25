@@ -81,7 +81,7 @@ Documenting problems solved during the build, these reflect real issues encounte
 
 **Resolution:** Added inbound ICMPv4 allow rules on both machines. Noted a syntax difference between Windows Server (`protocol=icmpv4:8,any`) and Windows 10 (`protocol=icmpv4`).
 
-**Takeaway:** "Request timed out" (packet sent, no response) is different from "Destination host unreachable" (routing issue) — distinguishing these narrows troubleshooting significantly.
+**Takeaway:** "Request timed out" (packet sent, no response) is different from "Destination host unreachable" (routing issue), distinguishing these narrows troubleshooting significantly.
 
 ![Ping failing then succeeding after firewall fix](screenshots/ping-before-after.png)
 
